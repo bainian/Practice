@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/eight_window" />
+            <option value="$PROJECT_DIR$/eleven_thread" />
+            <option value="$PROJECT_DIR$/fifteen_performanceoptimization" />
+            <option value="$PROJECT_DIR$/five_remoteview" />
+            <option value="$PROJECT_DIR$/four_view2" />
+            <option value="$PROJECT_DIR$/fourteen_jnindk" />
+            <option value="$PROJECT_DIR$/nine_fourservice" />
+            <option value="$PROJECT_DIR$/one_activity" />
+            <option value="$PROJECT_DIR$/seven_anim" />
+            <option value="$PROJECT_DIR$/six_drawable" />
+            <option value="$PROJECT_DIR$/ten_message" />
+            <option value="$PROJECT_DIR$/thirteen_allteac" />
+            <option value="$PROJECT_DIR$/three_view" />
+            <option value="$PROJECT_DIR$/twelve_bitmapcache" />
+            <option value="$PROJECT_DIR$/two_ipc" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/eight_window" />
+            <option value="$PROJECT_DIR$/eleven_thread" />
+            <option value="$PROJECT_DIR$/fifteen_performanceoptimization" />
+            <option value="$PROJECT_DIR$/five_remoteview" />
+            <option value="$PROJECT_DIR$/four_view2" />
+            <option value="$PROJECT_DIR$/fourteen_jnindk" />
+            <option value="$PROJECT_DIR$/nine_fourservice" />
+            <option value="$PROJECT_DIR$/one_activity" />
+            <option value="$PROJECT_DIR$/seven_anim" />
+            <option value="$PROJECT_DIR$/six_drawable" />
+            <option value="$PROJECT_DIR$/ten_message" />
+            <option value="$PROJECT_DIR$/thirteen_allteac" />
+            <option value="$PROJECT_DIR$/three_view" />
+            <option value="$PROJECT_DIR$/twelve_bitmapcache" />
+            <option value="$PROJECT_DIR$/two_ipc" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

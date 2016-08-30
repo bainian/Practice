@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XingCheng.iml" filepath="$PROJECT_DIR$/XingCheng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eight_window/eight_window.iml" filepath="$PROJECT_DIR$/eight_window/eight_window.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eleven_thread/eleven_thread.iml" filepath="$PROJECT_DIR$/eleven_thread/eleven_thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fifteen_performanceoptimization/fifteen_performanceoptimization.iml" filepath="$PROJECT_DIR$/fifteen_performanceoptimization/fifteen_performanceoptimization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/five_remoteview/five_remoteview.iml" filepath="$PROJECT_DIR$/five_remoteview/five_remoteview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/four_view2/four_view2.iml" filepath="$PROJECT_DIR$/four_view2/four_view2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fourteen_jnindk/fourteen_jnindk.iml" filepath="$PROJECT_DIR$/fourteen_jnindk/fourteen_jnindk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nine_fourservice/nine_fourservice.iml" filepath="$PROJECT_DIR$/nine_fourservice/nine_fourservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/one_activity/one_activity.iml" filepath="$PROJECT_DIR$/one_activity/one_activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seven_anim/seven_anim.iml" filepath="$PROJECT_DIR$/seven_anim/seven_anim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/six_drawable/six_drawable.iml" filepath="$PROJECT_DIR$/six_drawable/six_drawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ten_message/ten_message.iml" filepath="$PROJECT_DIR$/ten_message/ten_message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thirteen_allteac/thirteen_allteac.iml" filepath="$PROJECT_DIR$/thirteen_allteac/thirteen_allteac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/three_view/three_view.iml" filepath="$PROJECT_DIR$/three_view/three_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twelve_bitmapcache/twelve_bitmapcache.iml" filepath="$PROJECT_DIR$/twelve_bitmapcache/twelve_bitmapcache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/two_ipc/two_ipc.iml" filepath="$PROJECT_DIR$/two_ipc/two_ipc.iml" />
+    </modules>
+  </component>
+</project>
