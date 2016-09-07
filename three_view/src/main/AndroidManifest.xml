@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.umpay.three_view">
 
+    <permission
+        android:name="com.fnz.permission"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.fnz.pp"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="com.fnz.permission" />
+<!--    <uses-permission android:name="com.fnz.pp" />-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +25,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".ServerP"
+            android:permission="com.fnz.permission">
+            <intent-filter>
+                <action android:name="com.aa.remote_service" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name=".MyProvider"
+            android:authorities="com.fnz.provider"
+            android:exported="true"
+            android:permission="com.fnz.pp"
+            android:process=":provider" />
     </application>
 
 </manifest>

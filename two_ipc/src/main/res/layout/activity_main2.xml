@@ -15,8 +15,8 @@
         android:text="Hello World!" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="launch activity2" />
+        android:text="launch activity3" />
 </RelativeLayout>

@@ -3,56 +3,55 @@ package com.umpay.xingcheng
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_main3.*
 import org.jetbrains.anko.onClick
 
 /**
- * Created by sage on 16-8-30.
+ * Created by sage on 16-8-31.
  */
-class Activity2 : AppCompatActivity() {
-
+class Activity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        log("oncreate2")
-        setContentView(R.layout.activity_main2)
+        log("oncreate3")
+        setContentView(R.layout.activity_main3)
         btn.onClick { startActivity(Intent(this, MainActivity::class.java)) }
-        btn2.onClick { startActivity(Intent(this, Activity2::class.java)) }
+        btn4.onClick { startActivity(Intent(this, Activity4::class.java)) }
         btn3.onClick { startActivity(Intent(this, Activity3::class.java)) }
     }
 
     override fun onRestart() {
         super.onRestart()
-        log("onrestart2")
+        log("onrestart3")
     }
 
     override fun onStart() {
         super.onStart()
-        log("onstart2")
+        log("onstart3")
     }
 
     override fun onPause() {
         super.onPause()
-        log("onpause2")
+        log("onpause3")
     }
 
     override fun onResume() {
         super.onResume()
-        log("onresume2")
+        log("onresume3")
 
     }
 
     override fun onStop() {
         super.onStop()
-        log("onstop2")
+        log("onstop3")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        log("ondestroy2")
+        log("ondestroy3")
     }
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
-        log("onnewIntent2")
+        log("onnewIntent3")
     }
 }
