@@ -25,8 +25,8 @@ class LL : LinearLayout {
 
     override fun onInterceptTouchEvent(ev: MotionEvent?): Boolean {
         log("ll oninterceptTouchEvent")
-        return super.onInterceptTouchEvent(ev)
-//        return true
+//        return super.onInterceptTouchEvent(ev)
+        return true
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
@@ -44,5 +44,10 @@ class LL : LinearLayout {
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
         log("ll dispatchTouchEvent ")
         return super.dispatchTouchEvent(ev)
+    }
+
+    override fun setOnClickListener(l: OnClickListener?) {
+        super.setOnClickListener(l)
+        log("ll setOnClickListener")
     }
 }

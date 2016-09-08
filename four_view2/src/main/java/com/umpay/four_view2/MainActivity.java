@@ -13,7 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import com.umpay.three_view.ServerLinstener;
 
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String TAG = "MainActivity";
     Intent intent = null;
+    VV vv = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +33,64 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         intent = new Intent("com.aa.remote_service");
         intent.setPackage("com.umpay.three_view");
+        vv = (VV) findViewById(R.id.vv);
+        Log.i(TAG, "onCreate: vv width = " + vv.getWidth() + " vv height = " + vv.getHeight());
         bindService(intent, sc, Context.BIND_AUTO_CREATE);
-        final VV vv = (VV) findViewById(R.id.vv);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.ll);
+        ll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "ll onClick: ");
+            }
+        });
+        ll.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        Log.i(TAG, "ll OnTouchListener: action_down");
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        Log.i(TAG, "ll OnTouchListener: action_move");
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        Log.i(TAG, "ll OnTouchListener: action_up");
+                        break;
+                }
+                return false;
+            }
+        });
+        vv.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        Log.i(TAG, " OnTouchListener: action_down");
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        Log.i(TAG, " OnTouchListener: action_move");
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        Log.i(TAG, " OnTouchListener: action_up");
+                        break;
+                }
+                return false;
+            }
+        });
+
+        ViewTreeObserver tree = vv.getViewTreeObserver();
+        tree.addOnGlobalFocusChangeListener(new ViewTreeObserver.OnGlobalFocusChangeListener() {
+            @Override
+            public void onGlobalFocusChanged(View oldFocus, View newFocus) {
+                Log.i(TAG, "onGlobalFocusChanged: vv width = " + vv.getWidth() + " vv height = " + vv.getHeight());
+            }
+        });
+        vv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "vv onClick: ");
+            }
+        });
         findViewById(R.id.ccc).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
         });
         ((EditText) findViewById(R.id.et)).setError("hehe");
 
-
     }
 
     @Override
@@ -69,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
             case MotionEvent.ACTION_UP:
                 Log.i(TAG, "onTouchEvent: action_up");
                 break;
-
         }
 
         return super.onTouchEvent(event);
@@ -82,8 +139,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        Log.i(TAG, "onWindowFocusChanged: vv width = " + vv.getWidth() + " vv height = " + vv.getHeight());
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
+        Log.i(TAG, "onStart: vv width = " + vv.getWidth() + " vv height = " + vv.getHeight());
         Log.i(TAG, "onStart: ");
         Uri uri = Uri.parse("content://com.fnz.provider");
         getContentResolver().query(uri, null, null, null, null, null);
@@ -118,6 +182,18 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume: vv width = " + vv.getWidth() + " vv height = " + vv.getHeight());
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(TAG, "onPause: vv width = " + vv.getWidth() + " vv height = " + vv.getHeight());
+    }
 
     @Override
     protected void onDestroy() {
