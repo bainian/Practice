@@ -14,7 +14,10 @@
     <EditText
         android:id="@+id/et"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:text="HHHH"
+        android:background="@drawable/input_shape" />
 
     <com.umpay.four_view2.LL
         android:id="@+id/ll"
@@ -25,8 +28,8 @@
         <com.umpay.four_view2.VV
             android:id="@+id/vv"
             android:layout_width="wrap_content"
-            android:background="@android:color/darker_gray"
             android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
             app:view_color="@android:color/holo_green_dark" />
 
     </com.umpay.four_view2.LL>
